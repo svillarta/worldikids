@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header_menu {
+	margin-top: 15px;
+}
+.header_menu a:link {
+	color: #000;
+}
+.header_menu a:visited {
+	color: #000;
+}
+.navi_red a:link {
+	color: #E50000;
+
+}
+.navi_red a:visited {
+	color: #E50000;
+}
+
+.d_manu_li {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999;
+}
+
+
+#crnav-head div.col-xs-5 ,#crnav-head div.col-xs-2 ,#crnav-head div.col-xs-4 {
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 3px;
+	margin-bottom: 0px;
+	margin-left: 3px;
+}
+
+.mobile_header_navi a:link {
+	color: #000;
+}
+.mobile_header_navi a:visited {
+	color: #000;
+}
+.mobile_header_navi a:link {
+	color: #E50000;
+
+}
+.mobile_header_navi a:visited {
+	color: #E50000;
+}
+
+
+
+.footer {
+	background-color: #666666;
+	color: #FFF;
+	text-align: center;
+	padding: 1em;
+}
+.footer h2 {
+	font-size: 22px;
+	text-align: left;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.footer img {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+.footer ul {
+	margin-left: 20px;
+}
+.footermenu {
+}
+.footermenu li {
+	width: 15em;
+	float: left;
+	text-align: left;
+	font-size: 16px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin: 0;
+}
+@media (max-width: 768px) {
+.footermenu li {
+	width: 11em;
+	float: left;
+	text-align: left;
+	font-size: 13px;
+}	
+}
+
+.footermenu2 li {
+	width: 11.5em;
+	float: left;
+	text-align: left;
+	font-size: 16px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin: 0;
+}
+.footermenu2 li span {
+	width: 12.5em;
+	float: left;
+	text-align: left;
+	font-size: 16px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+@media (max-width: 768px) {
+.footermenu2 li {
+	width: 11em;
+	float: left;
+	text-align: left;
+	font-size: 13px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}	
+.footermenu2 li span {
+	font-size: 13px;
+}
+
+}
+
+.footermenu li a:link ,.footermenu2 li a:link {
+	color: #FFF;
+	}
+.footermenu li a:visited ,.footermenu2 li a:visited {
+	color: #FFF;
+	}
+
+.snslink {
+	margin-left: 15px;
+	clear: both;
+	text-align: left;
+	padding-top: 15px;
+}
+
+.fb-page {
+	margin-top: 45px;
+	text-align: left;
+}
+.footermenu li span {
+	font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+
+}
+.img-responsive-overwrite{
+    margin: 0 auto;
+}
+
+.container-fluid {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}

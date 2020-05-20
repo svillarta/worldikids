@@ -161,20 +161,20 @@
         <!-- /sb-appshell-v1-header-breadcrumbs -->
       </div>
       <!---body content-->
-      <div class="container">
+      <div class="container" >
         <div class="row line">
           <h1 class="hdg-l1">
           <font style="vertical-align: inherit;">
           <font style="vertical-align: inherit;">よくあるご質問</font>
           </font>
           </h1>
-          <div class="container">
+          <div class="container" >
             <div class="row">
               <div class="col-md-9 col-md-offset-1 align-self-center" >
                 <div class="input-group input-group-lg">
                   <input type="text" id="inp-search" class="form-control" placeholder="キーワードを入力してください" aria-label="キーワードを入力してください" aria-describedby="button-addon2" style="border: 2px solid #A1D16B !important;">
                   <div class="input-group-append ">
-                    <a class="btn btn-success" id="btn-search" style="background-color:#A1D16B !important;" type="button"><i class="fa fa-search"></i> 検索</a>
+                    <a class="btn btn-success" id="btn-search" style="background-color:#A1D16B !important; border-color: #A1D16B !important;" type="button"><i class="fa fa-search"></i> 検索</a>
                   </div>
                 </div>
               </div>
@@ -240,7 +240,50 @@
                 </div>
                 <div align="left">
                   <ul id="content" class="list-qa-01 no-border-bottom">
-                    
+                    <li class="list-qa-01-item">
+                      <p href="/support/faq/view/26039" class="list-qa-01-link">
+                        </p>
+                          <dl class="box-qa-01">
+                            <dt>
+                              <p style="color:red;">パスワードの変更はどう行えばよいですか？</p>
+                            </dt>
+                            <dd>
+                                  1. ログイン後のページにログインしてください。
+                              <br>    2. 右メニュー「設定」を選択してください。
+                              <br>    3. 「パスワード設定」タブにて、変更後のパスワード（半角英数字4~8字）を入力してください。
+                              <br>※上記の手順にてパスワード変更ができない場合は、ログイン後のページの右メニュー「お問い合わせ」ページよりご連絡いただくか、&nbsp;<a href="mailto:service@worldikids.com">事務局</a>(service@worldikids.com)にご登録されているメールアドレスからその旨をご連絡ください。
+                            </dd>
+                          </dl>
+                          <p></p>
+                  
+                          <button class="btn-useful" type="button" id="btn-16" data-faq-number="16">
+                            <span class="far fa-thumbs-up" id="smile16"> </span> <b id="16">1</b>
+                            <!-- <img src="loadingElips.gif" style="position: absolute; left: 0px; top: -0.5px; width: 100%; height: 26px;"> -->
+                          </button>
+                    </li>
+
+                    <li class="list-qa-01-item">
+                      <p href="/support/faq/view/26039" class="list-qa-01-link"></p>
+                        <dl class="box-qa-01">
+                          <dt>
+                            <p style="color:red;">「先生へのリクエスト」はどのように登録するの？</p>
+                          </dt>
+                          <dd>
+                                        1.ログイン後のページの「レッスン予約を予約する」を選択してください。
+                          <br>2.ご希望の日時や選択肢を選択して検索ボタンを選択してください。
+                          <br>3.ご希望の先生の予約ボタンを選択してください。
+                          <br>4.「レッスン予約」ページが開くので、「先生へのリクエスト」の各項目を選択してください。
+                          <br>5.その他リクエストあれば、英語で記載してください。
+                          <br>6.「予約」ボタンを選択して予約を完了 これによりリクエスト内容が登録された形となりますので、 次のレッスンからはこの時に登録したリクエスト内容がデフォルトとなります。 
+                          <br>※リクエスト内容を変更されたい場合には、「レッスン予約」ページにて 上記手順により異なる選択肢を選択して頂く形となります。
+                          </dd>
+                        </dl>
+                      <p></p>
+                  
+                          <button class="btn-useful" type="button" id="btn-17" data-faq-number="17">
+                            <span class="far fa-thumbs-up" id="smile17"> </span> <b id="17">1</b>
+                          </button>
+                        </li>
                   </ul>
                 </div>
                 
@@ -398,24 +441,25 @@
                 },    
                 success:function(dataa){ 
                     if (dataa =='error') {
-            $('#content').html('<h2 class="hdg-l2 sba-page">検索してください</h2>');
+                      $('#content').html('<h2 class="hdg-l2 sba-page">検索してください</h2>');
+                      $('.sba-page').hide();
                     }else if (dataa =='noMatch') {
-                      $('#result').html('<h2 class="hdg-l2 sba-page">キーワードが一致しません</h2>');
-                      $.ajax({  
-                        url:"ajax/firstContent.php",  
-                        type:"post",  
-                        data:{ip:ip},
-                        beforeSend: function(){
-                        },    
-                        success:function(dataa){ 
-                          
-
-                            $('#content').html(dataa);
-                        }
-                    }); 
+                      // $('#result').html('<h2 class="hdg-l2 sba-page">キーワードが一致しません</h2>');
+                      $('#content').html('<h2 class="hdg-l2 sba-page">キーワードが一致しません</h2>');
+                      // $.ajax({  
+                      //   url:"ajax/firstContent.php",  
+                      //   type:"post",  
+                      //   data:{ip:ip},
+                      //   beforeSend: function(){
+                      //   },    
+                      //   success:function(dataa){
+                      //     $('.sba-page').show(); 
+                      //     $('#content').html(dataa);
+                      //   }
+                      // }); 
                     }else{
-                
                       $('#result').html('');
+                      $('.sba-page').hide();
                       $('#content').html(dataa);
                     }
                 }
@@ -437,12 +481,25 @@
                     },    
                     success:function(dataa){ 
                         if (dataa =='error') {
-              $('#content').html('<h2 class="hdg-l2 sba-page">検索してください</h2>');
+                          $('#content').html('<h2 class="hdg-l2 sba-page">検索してください</h2>');
+                          $('.sba-page').hide();
                         }else if (dataa =='noMatch') {
-                          $('#result').html('<h2 class="hdg-l2 sba-page">キーワードが一致しません</h2>');
+                          // $('#result').html('<h2 class="hdg-l2 sba-page">キーワードが一致しません</h2>');
+                          $('#content').html('<h2 class="hdg-l2 sba-page">キーワードが一致しません</h2>');
+                          // $.ajax({  
+                          //   url:"ajax/firstContent.php",  
+                          //   type:"post",  
+                          //   data:{ip:ip},
+                          //   beforeSend: function(){
+                          //   },    
+                          //   success:function(dataa){
+                          //     $('.sba-page').show(); 
+                          //     $('#content').html(dataa);
+                          //   }
+                          // }); 
                         }else{
-                    $('#result').html('');
-
+                          $('#result').html('');
+                          $('.sba-page').hide();
                           $('#content').html(dataa);
                         }
                     }
@@ -481,9 +538,8 @@
                           },    
                           success:function(dataa){ 
                             var element = document.getElementById("smile"+id);
-                      element.classList.add("btn-clicked");
-                              $('#'+questionId).html(dataa);
-                              
+                            element.classList.add("btn-clicked");
+                            $('#'+questionId).html(dataa);
                           }
                       });
                         }else {

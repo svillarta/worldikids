@@ -733,4 +733,34 @@ font-size: 13px;
         padding-top: 40px;
         padding-bottom: 20px;
       }
+      .container{
+        padding: 5px !important;
+      }
+
+      .hdg-l1{
+        padding-bottom: 10px !important;
+      }
+
+      #faq-hotword{
+        padding-bottom: 20px !important;
+        padding-top: 10px !important;
+      }
+      .list-definition-01{
+        padding-bottom: 20px !important;
+        margin: 0px !important;
+      }
+      .tittle{
+        padding-top: 20px !important;
+        padding-left: 20px !important;
+       
+        
+      }
+      .list-toggle-01-container{
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .hdg-l2{
+        padding-bottom: 30px !important;
+
+      }
     }
